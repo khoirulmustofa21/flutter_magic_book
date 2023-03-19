@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
+
 import '../controller/ovh4_controller.dart';
 
 class Ovh4View extends StatefulWidget {
@@ -19,38 +20,41 @@ class Ovh4View extends StatefulWidget {
           Perbaiki kode dibawah ini agar tidak overflow,
           Gunakan SingleChildScrollView dengan Axis Horizontal pada Row!
           */
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 100,
-                width: 100,
-                decoration: const BoxDecoration(
-                  color: Colors.green,
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: const BoxDecoration(
+                    color: Colors.green,
+                  ),
                 ),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                decoration: const BoxDecoration(
-                  color: Colors.yellow,
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: const BoxDecoration(
+                    color: Colors.yellow,
+                  ),
                 ),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                decoration: const BoxDecoration(
-                  color: Colors.purple,
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: const BoxDecoration(
+                    color: Colors.purple,
+                  ),
                 ),
-              ),
-              Container(
-                height: 100,
-                width: 2000,
-                decoration: const BoxDecoration(
-                  color: Colors.red,
+                Container(
+                  height: 100,
+                  width: 2000,
+                  decoration: const BoxDecoration(
+                    color: Colors.red,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           const Divider(),
           const Divider(),
@@ -82,11 +86,13 @@ class Ovh4View extends StatefulWidget {
                   color: Colors.purple,
                 ),
               ),
-              Container(
-                height: 100,
-                width: 2000,
-                decoration: const BoxDecoration(
-                  color: Colors.red,
+              Expanded(
+                child: Container(
+                  height: 100,
+                  width: 2000,
+                  decoration: const BoxDecoration(
+                    color: Colors.red,
+                  ),
                 ),
               ),
             ],
@@ -98,38 +104,46 @@ class Ovh4View extends StatefulWidget {
           Bungkus di dalam ListView dengan Axis.horizontal,
           Lalu bungkus ListView dengan Container dengan tinggi 100
           */
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 100,
-                width: 100,
-                decoration: const BoxDecoration(
-                  color: Colors.green,
+          Container(
+            height: 100,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 100,
+                      decoration: const BoxDecoration(
+                        color: Colors.green,
+                      ),
+                    ),
+                    Container(
+                      height: 100,
+                      width: 100,
+                      decoration: const BoxDecoration(
+                        color: Colors.yellow,
+                      ),
+                    ),
+                    Container(
+                      height: 100,
+                      width: 100,
+                      decoration: const BoxDecoration(
+                        color: Colors.purple,
+                      ),
+                    ),
+                    Container(
+                      height: 100,
+                      width: 2000,
+                      decoration: const BoxDecoration(
+                        color: Colors.red,
+                      ),
+                    ),
+                  ],
                 ),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                decoration: const BoxDecoration(
-                  color: Colors.yellow,
-                ),
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                decoration: const BoxDecoration(
-                  color: Colors.purple,
-                ),
-              ),
-              Container(
-                height: 100,
-                width: 2000,
-                decoration: const BoxDecoration(
-                  color: Colors.red,
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
