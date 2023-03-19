@@ -38,7 +38,7 @@ class Ovh5View extends StatefulWidget {
                       "Hello World",
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 30.0,
+                        fontSize: 12.0,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -65,12 +65,14 @@ class Ovh5View extends StatefulWidget {
                       Icons.developer_board,
                       size: 24.0,
                     ),
-                    Text(
-                      "Hello World, warga Indonesia",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.bold,
+                    Expanded(
+                      child: Text(
+                        "Hello World, warga Indonesia",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],
