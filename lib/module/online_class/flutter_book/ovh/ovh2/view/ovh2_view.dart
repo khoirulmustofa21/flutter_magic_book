@@ -32,7 +32,7 @@ class Ovh2View extends StatefulWidget {
             ),
           ),
           Container(
-            height: 1000,
+            height: 100,
             decoration: const BoxDecoration(
               color: Colors.purple,
             ),
