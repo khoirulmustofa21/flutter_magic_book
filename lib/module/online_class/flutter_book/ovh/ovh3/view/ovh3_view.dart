@@ -20,25 +20,28 @@ class Ovh3View extends StatefulWidget {
       ),
       body: Column(
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              CircleAvatar(
-                radius: 40.0,
-                backgroundImage: NetworkImage(
-                  "https://i.ibb.co/PGv8ZzG/me.jpg",
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                CircleAvatar(
+                  radius: 40.0,
+                  backgroundImage: NetworkImage(
+                    "https://i.ibb.co/PGv8ZzG/me.jpg",
+                  ),
                 ),
-              ),
-              SizedBox(
-                width: 12.0,
-              ),
-              Text(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                style: TextStyle(
-                  fontSize: 20.0,
+                SizedBox(
+                  width: 12.0,
                 ),
-              ),
-            ],
+                Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
