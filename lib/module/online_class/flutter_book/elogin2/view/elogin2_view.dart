@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
 import '../controller/elogin2_controller.dart';
+import 'elogin2_content.dart';
 
 class ELogin2View extends StatefulWidget {
   const ELogin2View({Key? key}) : super(key: key);
@@ -13,14 +14,7 @@ class ELogin2View extends StatefulWidget {
         title: const Text("ELogin2"),
         actions: const [],
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: const [],
-          ),
-        ),
-      ),
+      body: const Elogin2Content()
     );
   }
 
