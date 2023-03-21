@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'customColors.dart';
+import 'package:hyper_ui/module/online_class/flutter_book/elogin1/view/customColors.dart';
 
 class Elogin2Content extends StatefulWidget {
   const Elogin2Content({Key? key}) : super(key: key);
