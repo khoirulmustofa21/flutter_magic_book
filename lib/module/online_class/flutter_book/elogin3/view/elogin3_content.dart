@@ -49,6 +49,7 @@ class _Elogin3ContentState extends State<Elogin3Content> {
                           fontWeight: FontWeight.w400,
                           fontFamily: 'Roboto',
                           letterSpacing: 0.5,
+                          height: 1.5
                         ),
                       ),
                     ],
