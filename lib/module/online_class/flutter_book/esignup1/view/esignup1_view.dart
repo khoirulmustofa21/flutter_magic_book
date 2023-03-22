@@ -156,7 +156,7 @@ class ESignup1View extends StatefulWidget {
                           height: 22,
                         ),
                         SizedBox(
-                          width: 230,
+                          width: 187,
                           height: 36,
                           child: Column(
                             children: [
