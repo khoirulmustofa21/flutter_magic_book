@@ -24,8 +24,9 @@ class ESignup1View extends StatefulWidget {
                   leading: IconButton(
                     color: Colors.black,
                     onPressed: () {},
-                    icon: const Icon(
+                    icon: Icon(
                       Icons.arrow_back_ios,
+                      color: CustomColors.colorPrimary,
                     ),
                   ),
                   elevation: 0,
@@ -37,10 +38,13 @@ class ESignup1View extends StatefulWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const Text(
+                            Text(
                               'Login',
                               style: TextStyle(
-                                color: Colors.black,
+                                color: CustomColors.colorPrimary,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: 'Roboto',
+                                fontSize: 16,
                               ),
                             ),
                             Image.asset(
