@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/state_util.dart';
 import '../view/edashboard1_view.dart';
@@ -18,4 +19,6 @@ class EDashboard1Controller extends State<EDashboard1View>
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
+  int currentIndex = 0;
+  final CarouselController carouselController = CarouselController();
 }
