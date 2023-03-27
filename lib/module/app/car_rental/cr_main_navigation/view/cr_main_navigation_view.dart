@@ -7,14 +7,6 @@ class CrMainNavigationView extends StatefulWidget {
   Widget build(context, CrMainNavigationController controller) {
     controller.view = this;
 
-    /*
-   TODO: Implement this @ controller
-   int selectedIndex = 0;
-   updateIndex(int newIndex) {
-   selectedIndex = newIndex;
-   setState(() {});
-   }
-   */
     return Theme(
       data: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.white,

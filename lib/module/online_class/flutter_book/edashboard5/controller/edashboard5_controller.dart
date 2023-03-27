@@ -6,17 +6,11 @@ class EDashboard5Controller extends State<EDashboard5View>
     implements MvcController {
   static late EDashboard5Controller instance;
   late EDashboard5View view;
-  bool isExpanded = false;
+
   @override
   void initState() {
     instance = this;
     super.initState();
-  }
-
-  setExpanded() {
-    setState(() {
-      isExpanded = !isExpanded;
-    });
   }
 
   @override
