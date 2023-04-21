@@ -86,9 +86,9 @@ class EDashboard5View extends StatefulWidget {
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
-      body: CustomScrollView(
+      body: const CustomScrollView(
         slivers: [
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: CreateRoomWidget(),
           ),
           PostsWidget(),

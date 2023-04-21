@@ -10,7 +10,7 @@ void main() async {
   await initialize();
 
   // Get.mainTheme.value = getDefaultTheme();
-  Get.mainTheme.value = getDarkTheme();
+  Get.mainTheme.value = getDefaultTheme();
   runMainApp();
 }
 

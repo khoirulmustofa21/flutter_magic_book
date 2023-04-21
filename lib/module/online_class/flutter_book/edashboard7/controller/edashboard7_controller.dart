@@ -7,6 +7,8 @@ class EDashboard7Controller extends State<EDashboard7View>
   static late EDashboard7Controller instance;
   late EDashboard7View view;
 
+  get currentIndex => null;
+
   @override
   void initState() {
     instance = this;
